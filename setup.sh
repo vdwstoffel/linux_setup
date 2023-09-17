@@ -23,6 +23,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # make zsh the default shell
 chsh -s $(which zsh)
 
+
 # create symbolic links for the dotfiles
-ln -s $working_directory/.zshrc /home/$current_user/.zshrc
-ln -s $working_directory/.gitconfig /home/$current_user/.gitconfig
+ln -sf $working_directory/.zshrc /home/$current_user/.zshrc
+ln -sf $working_directory/.gitconfig /home/$current_user/.gitconfig
