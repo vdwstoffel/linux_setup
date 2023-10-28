@@ -69,4 +69,5 @@ By creating a symlink the two files will be kept in sync. Once one file changes 
 ```bash
 ln -s $(pwd)/.zshrc /home/$(whoami)/.zshrc
 ln -s $(pwd)/.gitconfig /home/$(whoami)/.gitconfig
+ln -s $(pwd)/.vimrc /home/$(whoami)/.vimrc
 ```

@@ -47,3 +47,4 @@ chsh -s $(which zsh)
 echo "Creating symbolic links..."
 ln -sf $working_directory/.zshrc /home/$current_user/.zshrc
 ln -sf $working_directory/.gitconfig /home/$current_user/.gitconfig
+ln -sf $working_directory/.vimrc /home/$current_user/.vimrc
