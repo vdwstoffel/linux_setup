@@ -1,5 +1,8 @@
 #!/usr/bin/bash
+set -e
 
+### Alias pytyhon ###
+sudo apt-get install python-is-python3
 
 ### Node ###
 if command -v node &>/dev/null;
@@ -45,6 +48,12 @@ else
     sudo chmod +x /usr/local/bin/docker-compose
     sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 fi
+
+## Run docker without sudo
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker   # Might need to restart for changes to persist
+
 
 ### Postgresql ###
 if command -v psql &>/dev/null;
